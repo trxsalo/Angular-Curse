@@ -9,7 +9,7 @@ import { ListadoComponent } from './listado/listado.component';
         CommonModule
     ],
 
-    exports: [ListadoComponent], //que componentes seran publicos
+    exports: [ListadoComponent,HeroesComponent], //que componentes seran publicos
 
     declarations: [
         HeroesComponent,
