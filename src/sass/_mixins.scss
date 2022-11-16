@@ -1,0 +1,43 @@
+@use './variables' as v;
+/**@mixin heading ($color: v.$blanco ){
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: $color;
+    letter-spacing: 1px; //separacion de cada letra
+}
+*/
+@mixin telefono {
+        @media (min-width: v.$telefono) {
+            @content;
+        } 
+}
+
+@mixin table{
+        @media (min-width: v.$tablet) {
+            @content;
+        } 
+}
+
+@mixin desktop {
+        @media (min-width: v.$desktop) {
+            @content;
+        } 
+}
+@mixin desktopXL {
+        @media (min-width: v.$desktopXL) {
+            @content;
+        } 
+}
+
+@mixin grid($columnas,$fracion,$espaciado){
+    display: grid;
+    grid-template-columns: repeat($columnas,$fracion);
+    column-gap: $espaciado;
+}
+
+
+@mixin resetearlist {
+    margin: 0;
+    padding: 0;
+    list-style: none; //quita la vinhta de los li
+}

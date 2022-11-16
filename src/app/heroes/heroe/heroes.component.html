@@ -1,0 +1,30 @@
+
+<div>
+
+    <dl>
+        <td>Nombre:</td>
+        <dd>{{nombre}}</dd>
+
+        <TD>Nombre en Mayuscula</TD>
+        <dd>{{nameMayuscula}}</dd>
+
+        <td>Edad:</td>
+        <dd>{{edad}}</dd>
+        <td>Funcion:</td>
+        <dd>{{obtenerNacionalidad()}}</dd>
+    </dl>
+</div>
+
+<div class="div">
+    <button (click)="cambiarNombre()">
+        Cambiar Nombre
+    </button>
+    
+    <button (click)="cambiarEdad()">
+        Cambiar Edadd
+    </button>
+    
+    <button (click)="cambiarNacionalidad()">
+        Cambiar Nacionalidad
+    </button>
+</div>

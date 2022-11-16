@@ -1,0 +1,28 @@
+
+<div>   
+    Equipo A
+    <ul>
+        <li *ngFor="let heroe of heroes, let i = index">
+            {{i}} {{heroe}}
+        </li>
+    </ul>
+</div>
+
+
+<button (click)="borrarListado()">
+    Cambiar A a to B
+</button>
+
+<div *ngIf="borradoList.length !== 0; else noborrado">
+
+    Equipo B
+    <ul>
+        <li *ngFor="let b of borradoList ">
+            {{b}}
+        </li>
+    </ul>
+</div>
+
+<ng-template #noborrado>
+    <p>Aun no se han pasado al Equipo B</p>
+</ng-template>

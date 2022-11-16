@@ -1,0 +1,29 @@
+@use '../../../sass/mixins' as m;
+@use '../../../sass/variables' as v;
+
+div{
+    background:blue($color: #75f591);
+    border-radius: 2;
+    display: flex;
+}
+
+.div{
+
+        @include m.telefono{
+            @include m.grid(1,3fr,2rem)
+        }
+        @include m.desktop{
+            @include m.grid(3,1fr,4rem)
+        }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    button{
+        height: 10rem;
+        width: 10rem;
+        background-color: v.$lila;
+    }
+}

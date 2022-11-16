@@ -1,0 +1,29 @@
+@use '../../sass/variables' as v;
+
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span{
+        text-align: center;
+        width: 6rem;
+        height: 6rem;
+        padding: auto ;
+        background: v.$negro;
+        color: v.$blanco;
+        font-size: 4rem;
+    }
+    h1{
+        padding: 2rem 0;
+        color: v.$gris;
+        text-align: center;
+    }
+
+    button{
+        height: 6rem;
+        width: 6rem;
+    }
+}

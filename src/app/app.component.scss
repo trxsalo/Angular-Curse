@@ -1,0 +1,11 @@
+@use '../sass/mixins' as m;
+@use '../sass/variables' as v;
+
+div{
+    @include m.telefono{
+        @include m.grid(1,3fr,2rem)
+    }
+    @include m.desktop{
+        @include m.grid(3,1fr,4rem)
+    }
+}
